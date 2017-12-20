@@ -4,12 +4,12 @@
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br />
   </div>
-<% end %>
+<% end %> 
 
-<div class="apple_pagination">
+<div class="apple_pagination">  
   <div class="page_info">
-    <%= page_entries_info @tasks %>
+    <%= page_entries_info @places %>
   </div>
-  <%= will_paginate @tasks, :container => false %>
+  <%= will_paginate @places, :container => false %>
 </div>
 
