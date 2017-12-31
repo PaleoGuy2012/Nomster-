@@ -36,7 +36,7 @@
 <div class="pull-right">
   <% if current_user && current_user == @place.user %>
     <!-- Button trigger modal "Add a photo" -->
-    <button class="btn btn-primary" data-toggle="modal" data-target="#Photos">Add a photo</button>
+    <button class="btn btn-primary" data-toggle="modal" data-target="Photos">Add a photo</button>
     <%= link_to 'Edit', edit_place_path(@place), :class => 'btn btn-primary' %>
     <%= link_to 'Destroy', place_path(@place), :method => :delete, :data => {:confirm => 'Are you sure you want to delete this?'},:class => 'btn btn-danger' %>
   <% end %>
@@ -49,7 +49,7 @@
 <div class="col-xs-10 col-xs-offset-1">
   <h1 class="pull-left">Comments</h1>
   <!-- Button trigger modal "Add a comment" -->
-  <button class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#Comments">
+  <button class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="Comments">
     Add a comment
   </button>
 </div>
@@ -59,7 +59,7 @@
 
 
 <!-- Comment Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="Comments" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -108,7 +108,7 @@
 <div class="clear"></div>
 
 <!-- Photos Modal -->
-<div class="modal fade" id="Photos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="Photos" tabindex="-2" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
