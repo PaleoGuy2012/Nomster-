@@ -20,16 +20,14 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-
   margin: 0;
   padding: 0;
-
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-
-  background: url('ep_naturalwhite.png');
-}
+    background-color: #F2F2F2;
+  }
 
 .navbar .navbar-inverse {
   background: url('dark_embroidery.png');
@@ -41,6 +39,7 @@ body {
 .navbar-inverse .navbar-brand {
   color: #E3E85A;
   font-family: 'Abril Fatface', cursive;
+  font-size: 26px;
 }
 
 
